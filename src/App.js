@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import panda from './panda.jpg';
+import logo from './web_logo_VS.png';
 import './App.css';
 
 class App extends Component {
@@ -7,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={panda} className="App-logo" alt="logo" />
+          <img src={logo} className="App-logo" alt="logo" />
           <a
             className="App-link"
             href="https://www.latlmes.com/arts/return-of-the-golden-age-of-comics-1"
