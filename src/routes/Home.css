@@ -1,0 +1,25 @@
+.Home {
+    text-align: center;
+  }
+  
+  .Home-logo {
+    height: 20vmin;
+    pointer-events: none;
+  }
+  
+  .Home-header {
+    background-color: rgb(3, 3, 50);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .Home-link {
+    color: white;
+    margin: 0.5em;
+  }
+  
