@@ -28,8 +28,12 @@ class App extends Component {
             <Button variant="contained" color="primary">Twitter
             </Button> 
           </a>
+          <Link to="/projects">
+            <Button variant="contained" color="primary">Projects
+            </Button> 
+          </Link>
           <Link to="/contact">
-            <Button variant="contained" color="primary">contact
+            <Button variant="contained" color="primary">Contact
             </Button> 
           </Link>
         </header>

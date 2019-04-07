@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link, Switch, NavLink } from "react-rou
 import './index.css';
 import Contact from './routes/Contact';
 import App from './routes/App';
+import Projects from './routes/Projects'
 import 'typeface-roboto';
 import * as serviceWorker from './serviceWorker';
 
@@ -11,22 +12,10 @@ import * as serviceWorker from './serviceWorker';
 const routing = ( 
     <Router>
       <div>
-        {/* <ul>
-          <li>
-            <NavLink exact activeClassName="active" to="/">
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink activeClassName="active" to="/contact">
-              Contact
-            </NavLink>
-          </li>
-        </ul>
-        <hr /> */}
         <Switch>
           <Route exact path="/" component={App} />
           <Route path="/contact" component={Contact} exact />
+          <Route path="/projects" component={Projects} exact />
         </Switch>
       </div>
     </Router>
