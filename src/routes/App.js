@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import logo from '../web_logo_VS.png';
 import './App.css';
 
@@ -24,6 +25,7 @@ class App extends Component {
           >
             Twitter
           </a>
+          <Link to="/contact">Contact</Link>
         </header>
       </div>
     );

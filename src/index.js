@@ -10,7 +10,7 @@ import * as serviceWorker from './serviceWorker';
 const routing = ( 
     <Router>
       <div>
-        <ul>
+        {/* <ul>
           <li>
             <NavLink exact activeClassName="active" to="/">
               Home
@@ -22,7 +22,7 @@ const routing = (
             </NavLink>
           </li>
         </ul>
-        <hr />
+        <hr /> */}
         <Switch>
           <Route exact path="/" component={App} />
           <Route path="/contact" component={Contact} exact />
