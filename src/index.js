@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link, Switch, NavLink } from "react-rou
 import './index.css';
 import Contact from './routes/Contact';
 import App from './routes/App';
+import 'typeface-roboto';
 import * as serviceWorker from './serviceWorker';
 
 

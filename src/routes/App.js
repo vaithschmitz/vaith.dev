@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import Button from '@material-ui/core/Button';
 import logo from '../web_logo_VS.png';
 import './App.css';
 
@@ -15,7 +16,8 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Github
+            <Button variant="contained" color="primary">Github
+            </Button>        
           </a>
           <a
             className="App-link"
@@ -23,9 +25,13 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Twitter
+            <Button variant="contained" color="primary">Twitter
+            </Button> 
           </a>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact">
+            <Button variant="contained" color="primary">contact
+            </Button> 
+          </Link>
         </header>
       </div>
     );
