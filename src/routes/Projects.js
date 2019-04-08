@@ -3,7 +3,7 @@ import React from 'react';
 const Projects = () => {
     return(
         <div> 
-            Here's Some Projects
+            Under Construction.
         </div>
 
     )

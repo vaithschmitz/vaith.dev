@@ -7,7 +7,7 @@ import './Contact.css'
 const Contact = () => {
     return (            
         <div className='maintext'>
-            Please Don't Contact Me, I Like To Be Alone.   
+            Under Construction.   
             <Link to="/">      
                 <Fab variant="extended" color="primary">Home
                 </Fab> 
