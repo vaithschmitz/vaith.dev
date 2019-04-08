@@ -2,9 +2,13 @@
     background-color: rgb(3, 3, 50);
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     font-size: calc(10px + 2vmin);
-    color: white;
+    color: rgb(8, 2, 2);
+  }
+
+  .buttons {
+    
   }
