@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Fab from '@material-ui/core/Fab';
+import Button from '@material-ui/core/Button';
 import './Projects.css'
 
 
@@ -9,8 +9,8 @@ const Projects = () => {
         <div className='maintext'>
             Under Construction.   
             <Link to="/">      
-                <Fab variant="extended" color="primary">Home
-                </Fab> 
+                <Button variant="contained" color="secondary">Home
+                </Button> 
             </Link>
         </div>
 
