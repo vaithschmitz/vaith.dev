@@ -8,3 +8,15 @@
     font-size: calc(10px + 2vmin);
     color: white;
   }
+
+  .cards {
+    max-width: 80vmax;
+    display: flex;
+    /* flex-direction: row; */
+    overflow-x: auto;
+  }
+
+  .single-card {
+    width: 100%;
+    margin: 0.5em;
+  }
