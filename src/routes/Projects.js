@@ -7,9 +7,12 @@ import './Projects.css'
 const Projects = () => {
     return(
         <div className='maintext'>
-            Under Construction.   
+            Under Construction 
+            <hr/>  
+            <hr/>  
+            <hr/>  
             <Link to="/">      
-                <Button variant="contained" color="secondary">Home
+                <Button variant="outlined" color="secondary">Home
                 </Button> 
             </Link>
         </div>
