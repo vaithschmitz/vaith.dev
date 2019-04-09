@@ -20,68 +20,75 @@ const Projects = () => {
     return(
         <div className='maintext'>
             <div className="cards">
-                <Card className="single-card">
-                    <CardHeader title="Project 1"/>
-                    {MyCardMedia}
-                    {/* <CardMedia  
-                        style={{height: 0, paddingTop: '100%'}}
-                        image={logo}/> */}
-                    <CardContent>
-                        <Typography component="p">
+
+                <div className="single-card">
+                    <Card >
+                        <CardHeader title="Project 1"/>
+                        {MyCardMedia}
+                        <CardContent>
+                            <Typography component="p">
+                                This is a project with things and stuff.
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </div>
+
+                <div className="single-card">
+                    <Card>
+                        <CardHeader title="Project 2"/>
+                        {MyCardMedia}
+                        <CardContent>
+                            <Typography component="p">
+                                This is another project with things and stuff.
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </div>
+
+                <div className="single-card">
+                    <Card >
+                        <CardHeader title="Project 3"/>
+                        {MyCardMedia}
+                        <CardContent>
+                            <Typography component="p">
+                                And here's yet another one.
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </div>   
+
+                <div className="single-card">
+                    <Card >
+                        <CardHeader title="Project 4"/>
+                        {MyCardMedia}
+                        <CardContent>
+                            <Typography component="p">
+                                Hello, did anybody say cheesecake. Or beef cake? Or pie?
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </div>
+
+                <div className="single-card">
+                    <Card >
+                        <CardHeader title="Project 5"/>
+                        {MyCardMedia}
+                        <CardContent>
+                            <Typography component="p">
                             This is a project with things and stuff.
-                        </Typography>
-                    </CardContent>
-                </Card>
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </div>
 
-                <Card className="single-card">
-                    <CardHeader title="Project 2"/>
-                    {MyCardMedia}
-                    <CardContent>
-                        <Typography component="p">
-                            This is another project with things and stuff.
-                        </Typography>
-                    </CardContent>
-                </Card>
-
-                <Card className="single-card">
-                    <CardHeader title="Project 3"/>
-                    {MyCardMedia}
-                    <CardContent>
-                        <Typography component="p">
-                            And here's yet another one.
-                        </Typography>
-                    </CardContent>
-                </Card>
-
-                <Card className="single-card">
-                    <CardHeader title="Project 4"/>
-                    {MyCardMedia}
-                    <CardContent>
-                        <Typography component="p">
-                            Hello, did anybody say cheesecake. Or beef cake? Or pie?
-                        </Typography>
-                    </CardContent>
-                </Card>
-
-                <Card className="single-card">
-                    <CardHeader title="Project 5"/>
-                    {MyCardMedia}
-                    <CardContent>
-                        <Typography component="p">
-                        This is a project with things and stuff.
-                        </Typography>
-                    </CardContent>
-                </Card>
-            
-            
             </div>
-            <br/>
+
             <Link to="/">      
                 <Button variant="outlined" color="secondary">Home
                 </Button> 
             </Link>
-            
         </div>
+        
 
     )
 }

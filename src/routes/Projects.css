@@ -1,3 +1,8 @@
+
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
 .maintext {
     background-color: rgb(3, 3, 50);
     min-height: 100vh;
@@ -10,13 +15,14 @@
   }
 
   .cards {
-    max-width: 80vmax;
+    max-width: 50vmax;
     display: flex;
-    /* flex-direction: row; */
-    overflow-x: auto;
+    flex-direction: row;
+    overflow-x: scroll;
   }
 
   .single-card {
     width: 100%;
+    height: 100%;
     margin: 0.5em;
   }
