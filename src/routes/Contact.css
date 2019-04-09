@@ -1,14 +1,23 @@
-.maintext {
-    background-color: rgb(3, 3, 50);
-    min-height: 100vh;
+.Contact-header {
+  background-color: rgb(3, 3, 50);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Contact-btns {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: calc(10px + 2vmin);
-    color: rgb(8, 2, 2);
+    flex-direction: column;
+    align-content: space-around;
   }
 
-  .buttons {
-    
+  #btn1, #btn2, #btn3 {
+    margin: 0.5em;
+  }
+
+  #btn3 {
+    margin: auto;
   }

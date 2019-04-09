@@ -5,17 +5,15 @@ import './Contact.css'
 
 
 const Contact = () => {
-    return (            
-        <div className='maintext'>
-            <div className='button'>
-                <Button variant="contained" color="primary" href="https://angel.co/vaith-schmitz">AngelList</Button>
-            </div>
-            <div className='button'>
-                <Button variant="contained" color="primary" href="https://linkedin.com/in/vaithschmitz">LinkedIn</Button>
-            </div>
-            <div className='button'>
+    return (  
+        <div className="Contact-header">
+            <div className='Contact-btns'>
+                <Button id='btn1' variant="outlined" color="primary" href="https://angel.co/vaith-schmitz">AngelList</Button>
+
+                <Button id='btn2' variant="outlined" color="primary"  href="https://linkedin.com/in/vaithschmitz">LinkedIn</Button>
+
                 <Link to="/">      
-                    <Button variant="contained" color="secondary">Home
+                    <Button id='btn3' variant="outlined" color="secondary">Home
                     </Button> 
                 </Link>
             </div>

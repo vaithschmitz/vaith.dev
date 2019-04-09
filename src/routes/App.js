@@ -11,38 +11,29 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <div className="App-buttons">
-          <Link to="/projects">
-            <Button 
-              id="btn1"
-              variant="contained" color="primary" style={{maxWidth: '100px', minWidth: '100px'}}>Projects
-            </Button> 
-          </Link>
-          <Link to="/contact">
+
+            <Link to="/projects">
+              <Button 
+                id="btn1"
+                variant="outlined" color="primary" >Projects
+              </Button> 
+            </Link>
+      
             <Button
-              id="btn2" variant="contained" color="primary" style={{maxWidth: '100px', minWidth: '100px'}}>Contact
-            </Button> 
-          </Link>
-          <a
-            className="App-link"
-            href="https://www.github.com/vaithschmitz"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button
-              id="btn3" variant="contained" color="primary" style={{maxWidth: '100px', minWidth: '100px'}}>Github
+              id="btn3" variant="outlined" color="primary"  href="https://www.github.com/vaithschmitz">Github
             </Button>        
-          </a>
-          <a
-            className="App-link"
-            href="https://www.twitter.com/realvaith"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+
             <Button 
-              id="btn4" variant="contained" color="primary" style={{maxWidth: '100px', minWidth: '100px'}}>Twitter
+              id="btn4" variant="outlined" color="primary"  href="https://www.twitter.com/realvaith">Twitter
             </Button> 
-          </a>
-        </div>
+            
+            <Link to="/contact">
+              <Button
+                id="btn2" variant="outlined"  color="secondary" >Contact
+              </Button> 
+            </Link>
+
+          </div>
         </header>
       </div>
     );
