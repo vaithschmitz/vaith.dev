@@ -11,14 +11,14 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <div className="App-buttons">
-
+{/* 
             <Link to="/projects">
               <Button 
                 id="btn1"
                 variant="outlined" color="primary" >Projects
               </Button> 
             </Link>
-      
+       */}
             <Button
               id="btn3" variant="outlined" color="primary"  href="https://www.github.com/vaithschmitz">Github
             </Button>        
