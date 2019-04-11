@@ -15,7 +15,7 @@ const routing = (
         <Switch>
           <Route exact path="/" component={App} />
           <Route path="/contact" component={Contact} exact />
-          <Route path="/projects" component={Projects} exact />
+          {/* <Route path="/projects" component={Projects} exact /> */}
         </Switch>
       </div>
     </Router>
