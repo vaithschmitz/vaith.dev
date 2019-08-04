@@ -3,6 +3,6 @@ import './Navbutton.css'
 
 export default function Navbutton(props){
     return(
-        <div id='Navbutton' className = {props.vert ? 'vert' : null}>{props.text} </div>
+        <div id='Navbutton' className = {props.vert ? 'vert' : 'horz'}>{props.text} </div>
     )
 }
