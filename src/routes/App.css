@@ -12,7 +12,6 @@ body{
   width: 100vw;
   grid-template-areas: 'a b c' 'd e f' 'g h i';
   text-align: center;
-  
 }
 
 #App-logo-container {
@@ -25,11 +24,27 @@ body{
 
 
 #App-logo {
-  height: 40vh;
-  
+  height: 40vh; 
 }
 
-#App-logo:hover{
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%)
+#btn-top, #btn-right, #btn-btm, #btn-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn-top{
+  grid-area: b;
+}
+
+#btn-right{
+  grid-area: f;
+}
+
+#btn-btm{
+  grid-area: h;
+}
+
+#btn-left{
+  grid-area: d;
 }

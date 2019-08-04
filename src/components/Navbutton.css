@@ -1,0 +1,8 @@
+#Navbutton{
+    background-color: white;
+}
+
+.vert{
+    writing-mode: vertical-rl;
+    text-orientation: upright
+}
