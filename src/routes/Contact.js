@@ -1,22 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
+import github from '../github.png' 
+import angel from '../angel.png'
 import './Contact.css'
 
 
 const Contact = () => {
     return (  
-        <div className="Contact-header">
-            <div className='Contact-btns'>
-                <Button id='btn1' variant="outlined" color="primary" href="https://angel.co/vaith-schmitz">AngelList</Button>
+        <div id='Contact'>
+            <div id='linkedin'>Linkedin</div>
+            <div id='github'><img id='githubPic' src={github}></img></div>
+            <div id='githubLink'>GITHUB</div>
+            <div id='angel'><img id='angelPic' src={angel}></img></div>
+            <div id='email'>Email</div>
 
-                <Button id='btn2' variant="outlined" color="primary"  href="https://linkedin.com/in/vaithschmitz">LinkedIn</Button>
 
-                <Link to="/">      
-                    <Button id='btn3' variant="outlined" color="secondary">Home
-                    </Button> 
-                </Link>
-            </div>
+
         </div>
     )
 }

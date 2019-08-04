@@ -1,4 +1,55 @@
 #Contact{
   height: 90vh;
   width: 100vw;
+  display: grid;
+  grid-template-areas: 'a b' 'c d';
+  margin: none;
+}
+
+#linkedin, #github, #angel, #email{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white ;
+  height: 45vh;
+  width: 50vw;
+}
+
+#githubPic, #angelPic, #linkedinPic{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 1
+}
+
+#githubLink, #linkedinLink, #angelLink, #emailLink{
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: blue
+}
+
+
+#linkedin{
+  grid-area: a
+}
+
+
+#github{
+  grid-area: b;
+}
+
+#githubLink{
+  grid-area: b
+}
+
+#angel{
+  grid-area: c
+}
+
+#email{
+  grid-area: d
 }
