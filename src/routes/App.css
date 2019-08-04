@@ -1,31 +1,35 @@
-.App {
+body{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(2, 2, 121);
+  margin: none;
+
+}
+
+#App {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-areas: 'a b c' 'd e f' 'g h i';
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
+#App-logo-container {
+  grid-area: e;
   pointer-events: none;
-}
-
-.App-header {
-  background-color: rgb(3, 3, 50);
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center
 }
 
-.App-buttons {
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
+
+#App-logo {
+  height: 40vh;
+  
 }
 
-#btn1, #btn2, #btn3, #btn4 {
-  max-width: 100px;
-  min-width: 100px;
-  margin: 0.5em;
+#App-logo:hover{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%)
 }
