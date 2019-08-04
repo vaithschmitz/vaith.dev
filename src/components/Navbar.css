@@ -15,6 +15,7 @@
     cursor: pointer;
     margin: 5px;
     border-radius: 3px;
+    color: white;
 }
 
 #Nav-home:hover{

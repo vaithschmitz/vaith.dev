@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import Navbutton from '../components/Navbutton'
 import Navbar from '../components/Navbar'
 import logo from '../web_logo_VS.png';
-import './App.css';
+import './Home.css';
 
 
-class App extends Component {
+class Home extends Component {
   render() {
     return (
-      <div id="App">
-        <div id='Navbar'><Navbar></Navbar></div>
-        <div id='App-logo-container'>
-          <img src={logo} id='App-logo' alt="logo" />
+      <div id="Home">
+        <div id='Home-logo-container'>
+          <img src={logo} id='Home-logo' alt="logo" />
         </div>
         <div id='homeText'>
           <p>Literally the most boring page, click on something up there.</p>
@@ -24,4 +22,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Home;
