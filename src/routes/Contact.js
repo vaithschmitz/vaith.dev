@@ -11,8 +11,11 @@ const Contact = () => {
         <div id='Contact'>
             <div id='linkedin'>Linkedin</div>
             <div id='github'><img id='githubPic' src={github}></img></div>
-            <div id='githubLink'>GITHUB</div>
+                <a id='githubLink' href='https://github.com/vaithschmitz'><div >github</div></a>
+
             <div id='angel'><img id='angelPic' src={angel}></img></div>
+                <a id='angelLink' href='https://angel.co/vaith-schmitz'><div >angel</div></a>
+
             <div id='email'>Email</div>
 
 
