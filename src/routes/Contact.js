@@ -16,13 +16,35 @@ const Contact = () => {
     return (  
         <div id='Contact'>
 
-        <form id='ContactForm' method='POST' data-netlify='true'>
-            <input id='ContactFormName' type='text' name='name' placeholder='Your Name'></input>
-            <input id='ContactFormEmail' type='email' name='email' placeholder='Your Email'></input>
-            <input id='ContactFormMsg' type='text' name='message' placeholder='Your Message'></input>
-            <button id='ContactFormSubmit' type='submit' value='Submit'>Send Message</button>
+        {/* <form id='ContactForm' onSubmit={(e)=>handleContactForm(e)}>
+            <input id='ContactFormName' type='text' placeholder='Your Name'></input>
+            <input id='ContactFormEmail' type='email' placeholder='Your Email'></input>
+            <input id='ContactFormMsg' type='text' placeholder='Your Message'></input>
+            <input id='ContactFormSubmit' type='submit' value='Submit'></input> 
         
-        </form>
+        
+        </form> */}
+
+<form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
         </div>
     )
 }
