@@ -1,23 +1,16 @@
-.Contact-header {
-  background-color: rgb(3, 3, 50);
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#Contact{
+  height: 90vh;
+  width: 100vw;
+  display: grid;
+  grid-template-areas: 'a' 'b';
+  margin: none;
 }
 
-.Contact-btns {
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-  }
-
-  #btn1, #btn2, #btn3 {
-    margin: 0.5em;
-  }
-
-  #btn3 {
-    margin: auto;
-  }
+#ContactForm{
+  display: grid;
+  grid-area: a;
+  grid-template-areas: 'a' 'b' 'c' 'd';
+  text-align: center;
+  padding: 2vw;
+  border-radius: 3px 
+}

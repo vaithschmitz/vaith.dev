@@ -1,0 +1,43 @@
+#Navbar{
+    display: grid;
+    grid-template-areas: 'a b c d';
+    width: 100vw;
+    height: 10vh;
+    font-size: 2vw;
+    color: white
+    
+}
+
+#Nav-home, #Nav-about, #Nav-contact, #Nav-proj{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 3px;
+    color: white;
+}
+
+#Nav-home:hover{
+    background-color: #A03759;
+    color: #F9AE53;
+    box-shadow: 0 0 8px #A03759
+}
+
+#Nav-proj:hover{
+    background-color: #DA6B55;  
+    color: #F9F871;
+    box-shadow: 0 0 8px #DA6B55
+}
+
+#Nav-about:hover{
+    background-color: #F9AE53;
+    color: #A03759;
+    box-shadow: 0 0 8px #F9AE53
+}
+
+#Nav-contact:hover{
+    background-color: #F9F871;
+    color: #DA6B55;
+    box-shadow: 0 0 8px #F9F871
+}

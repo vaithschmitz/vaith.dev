@@ -1,22 +1,31 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
+import github from '../github.png' 
+import angel from '../angel.png'
 import './Contact.css'
 
 
 const Contact = () => {
+
+    const handleContactForm = (e) =>{
+        e.preventDefault()
+        console.log(e.target)
+    }
+
     return (  
-        <div className="Contact-header">
-            <div className='Contact-btns'>
-                <Button id='btn1' variant="outlined" color="primary" href="https://angel.co/vaith-schmitz">AngelList</Button>
+        <div id='Contact'>
 
-                <Button id='btn2' variant="outlined" color="primary"  href="https://linkedin.com/in/vaithschmitz">LinkedIn</Button>
+        <form id='ContactForm' action='POST' data-netlify='true'>
+            <input id='ContactFormName' type='text' name='name' placeholder='Your Name'></input>
+            <input id='ContactFormEmail' type='email' name='email' placeholder='Your Email'></input>
+            <input id='ContactFormMsg' type='text' name='message' placeholder='Your Message'></input>
+            <input id='ContactFormSubmit' type='submit' value='Submit'></input> 
+        
+        
+        </form>
 
-                <Link to="/">      
-                    <Button id='btn3' variant="outlined" color="secondary">Home
-                    </Button> 
-                </Link>
-            </div>
+
         </div>
     )
 }

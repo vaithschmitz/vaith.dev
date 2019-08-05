@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Link, Switch, NavLink } from "react-router-dom";
 import './index.css';
 import Contact from './routes/Contact';
-import App from './routes/App';
+import Navbar from './components/Navbar'
+import Home from './routes/Home';
+import About from './routes/About';
 import Projects from './routes/Projects'
 import 'typeface-roboto';
 import * as serviceWorker from './serviceWorker';
@@ -12,10 +14,12 @@ import * as serviceWorker from './serviceWorker';
 const routing = ( 
     <Router>
       <div>
+        <Route component={Navbar}/>
         <Switch>
-          <Route exact path="/" component={App} />
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} exact />
           <Route path="/contact" component={Contact} exact />
-          {/* <Route path="/projects" component={Projects} exact /> */}
+          <Route path="/projects" component={Projects} exact />
         </Switch>
       </div>
     </Router>

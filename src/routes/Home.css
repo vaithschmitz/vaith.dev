@@ -1,0 +1,35 @@
+body{
+
+  background-color: rgb(0, 0, 51);
+  margin: none;
+  font-family: "Courier New", Courier, monospace
+
+}
+
+#Home {
+  display: grid;
+  height: 90vh;
+  width: 100vw;
+  grid-template-areas: 'a b c'  'e e e';
+  text-align: center;
+}
+
+#Home-logo-container {
+  grid-area: b;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+
+#Home-logo {
+  height: 40vh; 
+}
+
+
+#homeText{
+  grid-area: e;
+  color: white;
+  font-size: 2vw;
+}
