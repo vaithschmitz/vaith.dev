@@ -20,12 +20,9 @@ const Contact = () => {
             <input id='ContactFormName' type='text' name='name' placeholder='Your Name'></input>
             <input id='ContactFormEmail' type='email' name='email' placeholder='Your Email'></input>
             <input id='ContactFormMsg' type='text' name='message' placeholder='Your Message'></input>
-            <input id='ContactFormSubmit' type='submit' value='Submit'></input> 
-        
+            <button id='ContactFormSubmit' type='submit' value='Submit'>Send Message</button>
         
         </form>
-
-
         </div>
     )
 }
