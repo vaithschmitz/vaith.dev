@@ -16,30 +16,19 @@ const Contact = () => {
     return (  
         <div id='Contact'>
 
-        {/* <form id='ContactForm' onSubmit={(e)=>handleContactForm(e)}>
-            <input id='ContactFormName' type='text' placeholder='Your Name'></input>
-            <input id='ContactFormEmail' type='email' placeholder='Your Email'></input>
-            <input id='ContactFormMsg' type='text' placeholder='Your Message'></input>
-            <input id='ContactFormSubmit' type='submit' value='Submit'></input> 
-        
-        
-        </form> */}
+            <form id='ContactForm' name="contact" method="post">
+                <input type="hidden" name="form-name" value="contact" />
+                <input id='ContactFormName' type="text" name="name" placeholder='Your Name'/>
+                <input id='ContactFormEmail' type="email" name="email" placeholder='Your Email'/>
+                <textarea id='ContactFormMsg' name="message" placeholder='Your Message'></textarea>
+                <button id='ContactFormSubmit' type="submit">Send</button>
+            </form>
 
-            <form name="contact" method="post">
-          <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label>Your Name: <input type="text" name="name"/></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email"/></label>
-          </p>
-          <p>
-            <label>Message: <textarea name="message"></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
+            <div id='ContacLinks'>
+                <div id='ContactLinkedin'></div>
+                <div id='ContactGithub'></div>
+            </div>
+
         </div>
     )
 }

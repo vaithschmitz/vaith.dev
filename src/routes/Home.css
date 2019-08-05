@@ -19,7 +19,8 @@ body{
   pointer-events: none;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+  
 }
 
 
