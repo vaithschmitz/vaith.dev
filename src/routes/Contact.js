@@ -17,11 +17,18 @@ const Contact = () => {
         <div id='Contact'>
 
             <form id='ContactForm' name="contact" method="post">
+                <label>you are</label><select id='ContactFormType'>
+                    <option value="recruiter">Recruiter</option>
+                    <option value="hiringman">Hiring Manager</option>
+                    <option value="CTO">CTO / Tech Team</option>
+                    <option value="Other">Other</option>
+                </select>
                 <input type="hidden" name="form-name" value="contact" />
-                <input id='ContactFormName' type="text" name="name" placeholder='Your Name'/>
-                <input id='ContactFormEmail' type="email" name="email" placeholder='Your Email'/>
-                <textarea id='ContactFormMsg' name="message" placeholder='Your Message'></textarea>
-                <button id='ContactFormSubmit' type="submit">Send</button>
+                <label>your name</label><input id='ContactFormName' type="text" name="name"/>
+                <label>your email</label><input id='ContactFormEmail' type="email" name="email"/>
+
+                <label>your message</label><textarea id='ContactFormMsg' name="message"></textarea>
+                <button id='ContactFormSubmit' type="submit">submit</button>
             </form>
 
             <div id='ContacLinks'>
