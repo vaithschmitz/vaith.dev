@@ -7,17 +7,23 @@ import './Contact.css'
 
 
 const Contact = () => {
+
+    const handleContactForm = (e) =>{
+        e.preventDefault()
+        console.log(e.target)
+    }
+
     return (  
         <div id='Contact'>
-            <div id='linkedin'>Linkedin</div>
-            <div id='github'><img id='githubPic' src={github}></img></div>
-                <a id='githubLink' href='https://github.com/vaithschmitz'><div >github</div></a>
 
-            <div id='angel'><img id='angelPic' src={angel}></img></div>
-                <a id='angelLink' href='https://angel.co/vaith-schmitz'><div >angel</div></a>
-
-            <div id='email'>Email</div>
-
+        <form id='ContactForm' action='POST' data-netlify='true'>
+            <input id='ContactFormName' type='text' name='name' placeholder='Your Name'></input>
+            <input id='ContactFormEmail' type='email' name='email' placeholder='Your Email'></input>
+            <input id='ContactFormMsg' type='text' name='message' placeholder='Your Message'></input>
+            <input id='ContactFormSubmit' type='submit' value='Submit'></input> 
+        
+        
+        </form>
 
 
         </div>
