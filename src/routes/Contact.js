@@ -16,7 +16,7 @@ const Contact = () => {
     return (  
         <div id='Contact'>
 
-        <form id='ContactForm' action='POST' data-netlify='true'>
+        <form id='ContactForm' method='POST' data-netlify='true'>
             <input id='ContactFormName' type='text' name='name' placeholder='Your Name'></input>
             <input id='ContactFormEmail' type='email' name='email' placeholder='Your Email'></input>
             <input id='ContactFormMsg' type='text' name='message' placeholder='Your Message'></input>
