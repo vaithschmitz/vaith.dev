@@ -17,13 +17,17 @@
   margin-top: 10vh;
 }
 label{
-  color: white
+  color: white;
+  font-size: 2vw;
 }
+
+select { width: 400px; text-align-last:center; }
 
 #ContactFormName, #ContactFormEmail, #ContactFormType, #ContactFormMsg, #ContactFormSubmit{
   width: 50vw;
   text-align: center;
   border: none;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 2vw;
   color: rgb(0, 0, 51);
   box-shadow: 0 3px 4px rgb(158, 151, 255);
@@ -44,9 +48,8 @@ label{
 
 #ContactFormType{
   text-align: center;
-  border-radius: none;
-  box-shadow: none;
-  font-family: "Courier New", Courier, monospace
+  font-family: "Courier New", Courier, monospace;
+  -webkit-appearance: none
 }
 
 #ContactFormMsg{
