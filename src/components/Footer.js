@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import linkedin from '../Linkedin.png'
-import github from '../Github.png'
-import twitter from '../Twitter.png'
+import linkedin from '../linkedin.png'
+import github from '../github.png'
+import twitter from '../twitter.png'
 import './Footer.css'
 
 export default function Footer(){
