@@ -3,6 +3,7 @@
     width: 100vw;
     display: grid;
     grid-template-areas: 'a b c' 'd d d';
+    grid-template-columns: 33vw 33vw 33vw;
     margin: none;
   }
 
@@ -12,13 +13,21 @@
     color: white
 }
 
-#vaithPic{
+#About-ImageContainer{
     grid-area: b;
+    justify-self: center
+}
+
+#vaithPic{
+    
     height: 30vh;
 }
 
-#About-Section1{
-    grid-area: c;
-    text-align: center;
-    color: white
+
+#About-Hey-Breakline{
+    position: relative;
+    height: 0.5vh;
+    width: 50%;
+    left: 25%;
+    background-color: yellow
 }
