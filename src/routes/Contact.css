@@ -17,7 +17,8 @@
   margin-top: 10vh;
 }
 label{
-  color: white
+  color: white;
+  font-size: 2vw;
 }
 
 #ContactFormName, #ContactFormEmail, #ContactFormType, #ContactFormMsg, #ContactFormSubmit{

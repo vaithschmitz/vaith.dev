@@ -1,7 +1,24 @@
-#About{
+#AboutContainer{
     height: 85vh;
     width: 100vw;
     display: grid;
     grid-template-areas: 'a b c' 'd d d';
     margin: none;
   }
+
+#About-Intro{
+    grid-area: a;
+    text-align: center;
+    color: white
+}
+
+#vaithPic{
+    grid-area: b;
+    height: 30vh;
+}
+
+#About-Section1{
+    grid-area: c;
+    text-align: center;
+    color: white
+}
