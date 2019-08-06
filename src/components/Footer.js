@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import anime from 'animejs'
 import github from '../Github.png'
 import linkedin from '../Linkedin.png'
 import twitter from '../Twitter.png'
@@ -7,12 +6,6 @@ import './Footer.css'
 
 export default function Footer(){
     
-    const turnsies = () => {anime({
-        targets: '#Footer-github',
-        rotate: '1turn',
-        duration: 800
-      });
-    }
 
     return(
         <div id='FooterContainer'>
