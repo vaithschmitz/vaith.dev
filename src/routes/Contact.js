@@ -15,9 +15,10 @@ const Contact = () => {
 
             <form id='ContactForm' name="contact" method="post">
                 <label>you are</label><select id='ContactFormType'>
+                    <option value="CTO">Tech/CTO/Engineering Manager</option>
+                    <option value="hiringman">Client</option>
                     <option value="recruiter">Recruiter</option>
                     <option value="hiringman">Hiring Manager</option>
-                    <option value="CTO">CTO / Tech Team</option>
                     <option value="Other">Other</option>
                 </select>
                 <input type="hidden" name="form-name" value="contact" />
