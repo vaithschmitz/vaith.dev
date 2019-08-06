@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import github from '../Github.png'
 import linkedin from '../Linkedin.png'
+import github from '../Github.png'
 import twitter from '../Twitter.png'
 import './Footer.css'
 
