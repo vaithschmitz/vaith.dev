@@ -1,0 +1,32 @@
+#FooterContainer{
+    display: grid;
+    grid-template-areas: 'a b c';
+    width: 100vw;
+    height: 5vh;
+    text-align: center;
+    color: white;
+}
+
+#Footer-linkedin, #Footer-github, #Footer-twitter{
+    display: grid;
+    grid-template-areas: 'a b c';
+    grid-area: b;
+    justify-items: center;
+    margin-bottom: 1vh
+}
+
+
+#Footer-linkedin-image{
+    grid-area: a;
+    height: 4vh
+}
+
+#Footer-twitter-image{
+    grid-area: b;
+    height: 4vh
+}
+
+#Footer-github-image{
+    grid-area: c;
+    height: 4vh
+}

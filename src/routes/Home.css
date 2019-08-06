@@ -8,7 +8,7 @@ body{
 
 #Home {
   display: grid;
-  height: 90vh;
+  height: 85vh;
   width: 100vw;
   grid-template-areas: 'a b c'  'e e e';
   text-align: center;

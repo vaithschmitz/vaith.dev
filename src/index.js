@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link, Switch, NavLink } from "react-rou
 import './index.css';
 import Contact from './routes/Contact';
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 import Home from './routes/Home';
 import About from './routes/About';
 import Projects from './routes/Projects'
@@ -21,6 +22,7 @@ const routing = (
           <Route path="/contact" component={Contact} exact />
           <Route path="/projects" component={Projects} exact />
         </Switch>
+        <Route component={Footer}/>
       </div>
     </Router>
   )
