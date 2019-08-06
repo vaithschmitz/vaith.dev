@@ -18,7 +18,7 @@ import './Projects.css'
 
 const Projects = () => {
     return(
-        <div className='maintext'>
+        <div id='Projects'>
         </div>
     )
 }
