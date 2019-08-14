@@ -1,14 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Contact.css'
 
 
 const Contact = () => {
 
-    const handleContactForm = (e) =>{
-        e.preventDefault()
-        console.log(e.target)
-    }
 
     return (  
         <div id='Contact'>

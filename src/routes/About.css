@@ -1,33 +1,45 @@
 #AboutContainer{
     height: 85vh;
-    width: 100vw;
+    width: 90vw;
     display: grid;
-    grid-template-areas: 'a b c' 'd d d';
-    grid-template-columns: 33vw 33vw 33vw;
+    grid-template-areas: 'a b';
+    grid-template-columns: 50vw 50vw;
     margin: none;
   }
 
 #About-Intro{
     grid-area: a;
     text-align: center;
+    color: white;
+    transform: translateY(100vh);
+    transition: 2s
+}
+
+#About-Intro2{
+    text-align: center;
     color: white
 }
 
 #About-ImageContainer{
     grid-area: b;
-    justify-self: center
+    justify-self: center;
+    transform: translateY(-100vh);
+    transition: 2s
 }
 
 #vaithPic{
-    
     height: 30vh;
+    grid-area: b;
 }
 
+#About-Hey{
+    font-size: 3vw;
+    margin-left: 5vw;
+}
 
-#About-Hey-Breakline{
-    position: relative;
-    height: 0.5vh;
-    width: 50%;
-    left: 25%;
-    background-color: yellow
+#About-Hey-Text{
+    margin-left: 5vw;
+    font-size: 1.5vw;
+    text-align: center;
+
 }
