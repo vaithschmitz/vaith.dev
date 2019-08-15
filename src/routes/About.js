@@ -6,13 +6,14 @@ export default function About(props){
     const $ = (x) => document.getElementById(x)
 
     useEffect(() => {
-        $('About-Intro').style.transform = 'translateY(0vh)';
-        $('About-ImageContainer').style.transform = 'translateY(0vh)';
+        $('About-Left').style.transform = 'translateY(0vh)';
+        $('About-ImageContainer').style.transform = 'translateX(0vw)';
+        $('About-Right-Text').style.transform = 'translateY(0vh)';
     })
 
     return(
         <div id='AboutContainer'> 
-            <div id='About-Intro'>
+            <div id='About-Left'>
                 <p id='About-Hey'>Hey</p>
                 <div id ='About-Hey-Text'>
                     <p>TextTextTextTextTextTextTextTextText</p>
@@ -22,7 +23,16 @@ export default function About(props){
                     <p>TextTextTextTextTextTextTextTextText</p>
                 </div>
             </div>
-            <div id='About-ImageContainer'><img id='vaithPic'  src={vaith}></img></div>
+            <div id='About-Right'></div>
+                <div id='About-ImageContainer'><img id='vaithPic'  src={vaith}></img>
+                <div id ='About-Right-Text'>
+                    <p>TextTextTextTextTextTextTextTextText</p>
+                    <p>TextTextTextTextTextTextTextTextText</p>
+                    <p>TextTextTextTextTextTextTextTextText</p>
+                    <p>TextTextTextTextTextTextTextTextText</p>
+                    <p>TextTextTextTextTextTextTextTextText</p>
+                </div>
+            </div>
             
 
     

@@ -7,11 +7,11 @@
     margin: none;
   }
 
-#About-Intro{
+#About-Left{
     grid-area: a;
     text-align: center;
     color: white;
-    transform: translateY(100vh);
+    transform: translateY(-100vh);
     transition: 2s
 }
 
@@ -23,13 +23,14 @@
 #About-ImageContainer{
     grid-area: b;
     justify-self: center;
-    transform: translateY(-100vh);
+    transform: translateX(100vw);
     transition: 2s
 }
 
 #vaithPic{
     height: 30vh;
     grid-area: b;
+
 }
 
 #About-Hey{
@@ -41,5 +42,12 @@
     margin-left: 5vw;
     font-size: 1.5vw;
     text-align: center;
+}
 
+#About-Right-Text{
+    font-size: 1.5vw;
+    text-align: center;
+    color: white;
+    transform: translateY(100vh);
+    transition: 2s
 }
