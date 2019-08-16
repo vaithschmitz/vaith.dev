@@ -18,3 +18,66 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#mobileView{
+  font-size: 3vw;
+  color: white;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#mobileTextRight{
+  position: absolute;
+  white-space: nowrap;
+  animation: mobileSlideRight 3s infinite linear alternate;
+  top: 50%;
+}
+
+#mobileTextDown{
+  position: absolute;
+  left: 47%;
+  white-space: nowrap;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-align: center;
+  animation: mobileSlideDown 5s infinite linear alternate;
+}
+
+#mobileRect{
+  position: absolute;
+  top: 40vh;
+  left: 38vw;
+  height: 20vh;
+  width: 20vw;
+  border: solid 2vh red;
+  
+}
+
+@keyframes mobileSlideRight{
+  from{
+    left: -50vw;
+  }
+  to{left:75vw}
+}
+ 
+@keyframes mobileSlideDown{
+  from{top: -100vw}
+  to{top:150vw}
+}
+
+/* hide on mobile */
+@media only screen and (max-width: 600px) {
+  #desktopView {
+    display: none;
+  }
+  body{
+    height: 100vh
+  }
+}
+
+@media (min-width: 650px) and (min-height: 700px){
+  #mobileView{
+    display: none
+  }
+}

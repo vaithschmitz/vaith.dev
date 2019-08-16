@@ -22,7 +22,6 @@ export default function Home () {
         </div>
         <div id='homeText'>
           <p>Literally the most {boringWord} page, click on something up there.</p>
-          {/* <div onClick={()=> setBoringWord(boringWordList[Math.floor(Math.random()* boringWordList.length)])}>CLICK</div> */}
         </div>
 
 

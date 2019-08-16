@@ -14,30 +14,26 @@
     justify-content: center;
     cursor: pointer;
     margin: 5px;
-    border-radius: 3px;
+    border: none;
     color: white;
 }
 
 #Nav-home:hover{
-    background-color: #A03759;
-    color: #F9AE53;
-    box-shadow: 0 0 8px #A03759
+    background-color: rgba(125, 0, 0, 0.493);
+    color: #F9F871;
 }
 
 #Nav-proj:hover{
-    background-color: #DA6B55;  
+    background-color: rgba(125, 125, 0, 0.5);  
     color: #F9F871;
-    box-shadow: 0 0 8px #DA6B55
 }
 
 #Nav-about:hover{
-    background-color: #F9AE53;
-    color: #A03759;
-    box-shadow: 0 0 8px #F9AE53
+    background-color: rgba(0, 125, 125, 0.493);
+    color: #F9F871;
 }
 
 #Nav-contact:hover{
-    background-color: #F9F871;
-    color: #DA6B55;
-    box-shadow: 0 0 8px #F9F871
+    background-color: rgba(0, 0, 125, 0.5);
+    color: #F9F871;
 }

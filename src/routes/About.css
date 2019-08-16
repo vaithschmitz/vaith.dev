@@ -1,33 +1,62 @@
 #AboutContainer{
-    height: 85vh;
-    width: 100vw;
+    width: 90vw;
     display: grid;
-    grid-template-areas: 'a b c' 'd d d';
-    grid-template-columns: 33vw 33vw 33vw;
-    margin: none;
+    grid-template-areas: 'a b' 'c c';
+    grid-template-rows: 50vh 25vh;
+    margin-top: 10vh;
   }
 
-#About-Intro{
+#About-Left{
     grid-area: a;
+    width: 50vw;
     text-align: center;
-    color: white
+    color: white;
+    transform: translateY(-100vh);
+    transition: 2s
 }
 
-#About-ImageContainer{
+#About-Right{
     grid-area: b;
-    justify-self: center
+    width: 50vw;
+    text-align: center;
+    color: white;
+}
+
+#About-Hey-Text{
+    margin-left: 5vw;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+#About-Right-Text{
+    font-size: 1.5vw;
+    text-align: center;
+    color: white;
+    transform: translateY(100vh);
+    transition: 2s;
+    margin-right: 5vw;
+}
+
+#About-Bottom{
+    grid-area: c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100vh);
+    transition: 2s;
+    transition-delay: 0.5s
+}
+#About-Bottom-Text{
+    font-size: 1.5vw;
+    text-align: center;
+    color: white;
+}
+/* 
+#About-ImageContainer{
+    transform: translateX(100vw);
+    transition: 2s;
 }
 
 #vaithPic{
-    
-    height: 30vh;
-}
-
-
-#About-Hey-Breakline{
-    position: relative;
-    height: 0.5vh;
-    width: 50%;
-    left: 25%;
-    background-color: yellow
-}
+transform: rotate(45deg)
+} */
