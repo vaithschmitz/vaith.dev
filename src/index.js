@@ -14,7 +14,11 @@ import * as serviceWorker from './serviceWorker';
 
 const routing = ( 
     <Router>
-      <div id='mobileView'>Please View This Site On A Desktop.</div>
+      <div id='mobileView'>
+        <div id='mobileRect'></div>
+        <div id='mobileTextRight'><p>Please View This Site On A Desktop</p></div>
+        <div id='mobileTextDown'><p>Please View This Site On A Desktop</p></div>
+        </div>
       <div id='desktopView'>
         <Route component={Navbar}/>
         <Switch>
