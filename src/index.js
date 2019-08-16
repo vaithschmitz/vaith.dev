@@ -14,7 +14,8 @@ import * as serviceWorker from './serviceWorker';
 
 const routing = ( 
     <Router>
-      <div>
+      <div id='mobileView'>Please View This Site On A Desktop.</div>
+      <div id='desktopView'>
         <Route component={Navbar}/>
         <Switch>
           <Route exact path="/" component={Home} />
